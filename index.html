@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snap Landing Page</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+
+  <!-- Header and Navigation -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">snap</div>
+      <ul class="nav-links">
+        <li>
+          <a href="#">Features <img src="./images/icon-arrow-down.svg"></a>
+          <ul class="dropdown">
+            <a href="#"><img src="./images/icon-todo.svg"> Todo List</a>
+            <a href="#"><img src="./images/icon-calendar.svg"></i> Calendar</a>
+            <a href="#"><img src="./images/icon-reminders.svg"> Reminders</a>
+            <a href="#"><img src="./images/icon-planning.svg">Planning</a>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Company <img src="./images/icon-arrow-down.svg"></i></a>
+          <ul class="dropdown">
+            <li><a href="#">History</a></li>
+            <li><a href="#">Our Team</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+      <div class="auth-buttons">
+        <a href="#" class="login-btn">Login</a>
+        <a href="#" class="register-btn">Register</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Intro Section -->
+  <section class="intro">
+    <div class="intro-content">
+      <h1>Make remote work</h1>
+      <p>Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
+      <a href="#" class="btn">Learn more</a>
+      <div class="partners">
+        <img src="./images/client-databiz.svg" alt="Databiz">
+        <img src="./images/client-audiophile.svg" alt="Audiophile">
+        <img src="./images/client-meet.svg" alt="Meet">
+        <img src="./images/client-maker.svg" alt="Maker">
+      </div>
+    </div>
+
+    <!-- Responsive Image Section -->
+    <div class="intro-image">
+      <picture>
+        <!-- Mobile image (displayed when screen width is less than or equal to 500px) -->
+        <source srcset="./images/image-hero-mobile.png" media="(max-width: 500px)">
+        <!-- Default desktop image (displayed when screen width is larger than 500px) -->
+        <img src="./images/image-hero-desktop.png" alt="Remote Work Image">
+      </picture>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+<div class="attribution">
+  Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+  Coded by <a href="#">Omolere Mojisola</a>.
+</div>
