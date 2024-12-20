@@ -1,0 +1,229 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body and Typography */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  h1 {
+    font-size: 3rem;
+  }
+  
+  p {
+    font-size: 1.2rem;
+  }
+  
+  /* Navigation Styles */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+  }
+  
+  .logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style-type: none;
+  }
+  
+  .nav-links li {
+    position: relative;
+    margin-left: 20px;
+  }
+  
+  .nav-links img {
+    width: 12px; /* Adjust width as needed */
+    height: 12px; /* Adjust height as needed */
+    margin-right: 10px; /* Optional: add space between icon and text */
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+  }
+  
+  .nav-links li:hover > a {
+    color: #000;
+    font-weight: bold;
+  }
+  
+  /* Dropdown */
+  .nav-links li:hover .dropdown {
+    display: block;
+  }
+  
+  .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dropdown li {
+    margin-bottom: 10px;
+  }
+  
+  .dropdown li:last-child {
+    margin-bottom: 0;
+  }
+  
+  .auth-buttons a {
+    margin-left: 20px;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 1px solid #333;
+    border-radius: 20px;
+    font-size: 1rem;
+  }
+  
+  .auth-buttons a:hover {
+    background-color: #333;
+    color: white;
+  }
+  
+  .register-btn {
+    background-color: #333;
+    color: white;
+  }
+  
+  /* Intro Section */
+  .intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 20px;
+  }
+  
+  .intro-content {
+    max-width: 50%;
+  }
+  
+  .intro-content h1 {
+    margin-bottom: 20px;
+  }
+  
+  .intro-content p {
+    margin-bottom: 20px;
+  }
+  
+  .intro-content .btn {
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 20px;
+  }
+  
+  .intro-content .btn:hover {
+    background-color: #333;
+  }
+  
+  /* Partners Logos */
+  .partners img {
+    margin-right: 20px;
+    max-width: 100px;
+  }
+  
+  .intro-image img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .intro {
+      flex-direction: column;
+    }
+  
+    .intro-content, .intro-image {
+      max-width: 100%;
+      text-align: center;
+    }
+  /* Default styling for desktop */
+    .desktop-image {
+        display: block;
+        width: 100%; /* Make the image responsive */
+        height: auto; /* Maintain the aspect ratio */
+    }
+  
+    .mobile-image {
+      display: none;
+      width: 100%; /* Make the image responsive */
+      height: auto; /* Maintain the aspect ratio */
+    }
+    .desktop-image,
+    .mobile-image {
+      max-width: 1200px; /* Adjust max-width as needed */
+      width: 100%; /* Ensure the image scales to fit its container */
+      height: auto; /* Maintain aspect ratio */
+    }
+    .desktop-image,
+    .mobile-image {
+      width: 100%;
+      height: auto;
+      object-fit: cover; /* Or use "contain" to fit within the container */
+    }
+     
+  /* Switch to mobile layout on smaller screens */
+  @media (max-width: 500px) {
+    .desktop-image {
+      display: none;
+    }
+  
+    .mobile-image {
+      display: block;
+      width: 100%; /* Ensure the image scales well on smaller screens */
+    }
+  }
+    .intro-image img {
+      margin-top: 20px;
+    }
+  
+    .nav-links {
+      display: none;
+    }
+  
+    .navbar {
+      justify-content: space-between;
+    }
+  
+    .auth-buttons {
+      display: none;
+    }
+  
+    /* Mobile Dropdown */
+    .navbar.active .nav-links {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 70px;
+      right: 0;
+      background-color: white;
+      width: 100%;
+      text-align: center;
+    }
+  
+    .navbar.active .auth-buttons {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+  }
+  
